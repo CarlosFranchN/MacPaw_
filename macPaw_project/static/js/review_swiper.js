@@ -13,31 +13,28 @@ let animationID;
 
 
 const slideWidth = swiper_slides[0].offsetWidth; // Assumindo que todos os slides têm a mesma largura
-// console.log(slide_active.attributes[1].nodeValue);
+
 review_btns.forEach((btn, index) => {
     btn.addEventListener('click', function() {
+        // Alterar classe ativa do botão
         review_btns.forEach(b => b.classList.remove('-active'));
         this.classList.add('-active');
 
-        const direction = index > currentIndex ? 1 : -1;
-        const offset = direction * slideWidth;
-
+        // Mover slides
+        const offset = slideWidth * index;
         swiper_wrapper.style.transition = 'transform 0.5s ease-in-out';
-        swiper_wrapper.style.transform = `translateX(${-offset * index}px)`;
+        swiper_wrapper.style.transform = `translateX(-${offset}px)`;
 
-        setTimeout(() => {
-            swiper_slides.forEach(slide => {
-                slide.style.transition = 'none';
-                slide.style.transform = 'translateX(0)';
-                slide.classList.remove('-active');
-            });
+        // Após a transição, atualizar classe ativa do slide
+        swiper_wrapper.addEventListener('transitionend', () => {
+            swiper_slides.forEach(slide => slide.classList.remove('-active'));
             swiper_slides[index].classList.add('-active');
-        }, 500);
+        });
 
+        // Atualizar o índice atual
         currentIndex = index;
     });
 });
-
 swiper_wrapper.addEventListener('mousedown', startDrag);
 swiper_wrapper.addEventListener('touchstart', startDrag);
 

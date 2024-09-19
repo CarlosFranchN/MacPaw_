@@ -309,7 +309,7 @@
 .protection {
     background: rgba(39, 27, 48, .72);
     border-radius: 20px;
-    height: 80%;
+    height: 100%;
     padding: 3rem 2rem;
     text-align: center;
 }

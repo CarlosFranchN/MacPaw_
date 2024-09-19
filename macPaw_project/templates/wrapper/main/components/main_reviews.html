@@ -11,25 +11,23 @@
       %} {% endfor %} {% endblock %}
     </div>
   </div>
-
-  
 </div>
 <div class="container">
+  <div
+    class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+    data-swiper="reviews"
+  >
     <div
-      class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
-      data-swiper="reviews">
-        <div
-            class="swiper-wrapper"
-            id="swiper-wrapper-88b2c741090d7e1df"
-            aria-live="polite"
-            style="">
-            {% for quote in reviews_quotes %}
-                {% with index=reviews_quotes.index(quote) ,quote = quote["quote"], author = quote["author"], active="-active" if loop.first else "" %}
-                    {% include "/wrapper/main/components/reviews_section/swiper_container.html" %}
-                {% endwith %}
-            
-            {% endfor %}
-        </div>
-    
-       
+      class="swiper-wrapper"
+      id="swiper-wrapper-88b2c741090d7e1df"
+      aria-live="polite"
+      style=""
+    >
+      {% for quote in reviews_quotes %} {% with
+      index=reviews_quotes.index(quote) ,quote = quote["quote"], author =
+      quote["author"], active="-active" if loop.first else "" %} {% include
+      "/wrapper/main/components/reviews_section/swiper_container.html" %} {%
+      endwith %} {% endfor %}
+    </div>
+  </div>
 </div>

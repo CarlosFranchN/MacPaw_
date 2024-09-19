@@ -51,6 +51,7 @@ body {
     line-height: 1.5;
     margin-bottom: .5em
 }
+
 .h4.-normal {
     font-weight: 400
 }
@@ -79,32 +80,33 @@ body {
 
 @media only screen and (max-width: 575px) {
     .h1 {
-        font-size:28px
+        font-size: 28px
     }
 }
+
 @media only screen and (max-width: 575px) {
     .h2 {
-        font-size:24px
+        font-size: 24px
     }
 }
 
 @media only screen and (max-width: 575px) {
     .h3 {
-        font-size:20px
+        font-size: 20px
     }
 }
 
 @media only screen and (max-width: 575px) {
     .h4 {
-        font-size:18px
+        font-size: 18px
     }
 }
 
-.icon{
+.icon {
     fill: currentColor;
-    height: 1rem;
+    height: 2rem;
     vertical-align: middle;
-    width: 1rem;
+    width: 2rem;
 }
 
 
@@ -113,6 +115,7 @@ body {
     font-weight: 700;
     line-height: 22px
 }
+
 .-white {
     color: #fff;
 }
@@ -211,6 +214,7 @@ button {
 .-clip {
     overflow: hidden
 }
+
 .col-0 {
     width: 0
 }
@@ -366,9 +370,10 @@ button {
 .offset-right-12 {
     margin-right: 100%
 }
+
 @media only screen and (max-width: 767px) {
     .col-s-0 {
-        -webkit-flex-basis:inherit;
+        -webkit-flex-basis: inherit;
         flex-basis: inherit;
         -webkit-flex-grow: inherit;
         flex-grow: inherit;
@@ -639,7 +644,7 @@ button {
     padding: 0 32px;
     position: relative;
     text-align: center;
-    transition: background .3s,border-color .3s,color .3s;
+    transition: background .3s, border-color .3s, color .3s;
     vertical-align: middle;
     white-space: nowrap
 }
@@ -792,11 +797,11 @@ button {
 }
 
 .font--color-black-60 {
-    color: rgba(0,0,0,.6)
+    color: rgba(0, 0, 0, .6)
 }
 
 .font--color-black-30 {
-    color: rgba(0,0,0,.3)
+    color: rgba(0, 0, 0, .3)
 }
 
 .font--color-white {
@@ -804,7 +809,7 @@ button {
 }
 
 .font--color-white-60 {
-    color: hsla(0,0%,100%,.6)
+    color: hsla(0, 0%, 100%, .6)
 }
 
 .font--color-cyprus {
@@ -812,7 +817,7 @@ button {
 }
 
 .font--color-cyprus-50 {
-    color: rgba(3,58,55,.5)
+    color: rgba(3, 58, 55, .5)
 }
 
 .font--color-pistachio {
@@ -820,7 +825,7 @@ button {
 }
 
 .font--color-pistachio-50 {
-    color: rgba(195,229,214,.5)
+    color: rgba(195, 229, 214, .5)
 }
 
 .font--color-experience {

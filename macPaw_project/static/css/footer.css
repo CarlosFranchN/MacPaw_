@@ -461,4 +461,6 @@
 
 .social__item .social__link .icon.social__icon {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
